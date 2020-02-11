@@ -1,0 +1,15 @@
+<ion-view view-title="Karte">
+
+        <div id="Map" style="width: 100%; height: 104%" data-tap-disabled="true"></div>
+        <div id="locateButton">
+            <button class="button button-dark icon ion-pinpoint" style="margin-top: 100px; height: 20px; margin-right:10px" ng-controller="MapCtrl" ng-click="moveMarker();"></button>
+        </div>
+        <div id="aktualisieren">
+            <button class="button button-dark icon ion-refresh" style="margin-top: 100px; height: 20px; margin-left: 10px" ng-controller="FileCtrl"  ng-click="getNotesfromserver()">  Suche nach Pinnwandnotizen</button>
+        </div>
+        <div class="item range range-positive" id="slider" ng-controller="MapCtrl" style="width: 100%">
+             <i>50m</i>
+             <input id="slider2" type="range" ng-model="myslidervalue" min="50" max="500" value="200" ng-change="setRadius(myslidervalue)">
+             <i>500m</i>
+        </div>
+</ion-view>

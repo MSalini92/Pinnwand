@@ -1,0 +1,11 @@
+<ion-view view-title="Bild hinzufügen">
+    <ion-content ng-controller="CameraCtrl" id="contentImage">
+        <button ng-click="getPict()" class="button button-block button-dark">Foto aufnehmen</button>
+        <div style="text-align: center">
+            <img  id="myImage" src="" />
+        </div>
+        <a href="#app/browse">
+            <button class="button icon-left ion-plus-round button-block button-balanced" ng-hide="hideButton" ng-click="addImg()">Hinzufügen</button>
+        </a>
+    </ion-content>
+</ion-view>

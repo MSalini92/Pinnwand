@@ -1,0 +1,13 @@
+<ion-view view-title="Notiz hinzufügen">
+    <ion-content ng-controller="AddNoteCtrl" id="contentNote">
+            <div>
+                <br>
+                <textarea id="textInput" ng-model="noteText" placeholder="Text"></textarea>
+                <br>
+                <br>
+                    <a href="#app/browse">
+                        <button class="button icon-left ion-plus-round button-block button-balanced" ng-click="newNote()">Hinzufügen</button>
+                    </a>
+            </div>
+    </ion-content>
+</ion-view>

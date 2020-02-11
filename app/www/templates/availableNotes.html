@@ -1,0 +1,11 @@
+<ion-view title="verfügbare Notizen">
+    <ion-content ng-controller="FileCtrl">
+        <button class="button button-balanced button-block" ng-click="getNotesfromserver()">Aktualisieren</button>
+        <ion-list>
+            <ion-item ng-repeat="note in availableNotes"  ng-click="setViewtext(note.id)" href="#app/noteView">
+                {{note.name}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
